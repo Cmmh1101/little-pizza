@@ -73,9 +73,9 @@ const Navbar = (props: Props) => {
                   </Link>
                 </li>
                 <li className={`text-black font-normal md:font-bold text-2xl hover:text-red-600 hover:border-b-4 hover:border-red-600 transition duration-300 ease-in-out ${router.pathname == '/OrderNow' && "text-red-600 border-b-4 border-red-600"} ${navbar && 'hover:border-b-0' }`}>
-                  <Link href="/OrderNow">
+                  <a href="/OrderNow">
                     Order Now!
-                  </Link>
+                  </a>
                 </li>
                 <li className={`text-black font-normal md:font-bold text-2xl hover:text-red-600 hover:border-b-4 hover:border-red-600 transition duration-300 ease-in-out ${router.pathname == '/Catering' && "text-red-600 border-b-4 border-red-600"} ${navbar && 'hover:border-b-0' }`}>
                   <Link href="/Catering">
