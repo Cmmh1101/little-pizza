@@ -8,8 +8,7 @@ const Navbar = (props: Props) => {
     const [navbar, setNavbar] = useState(false);
     const router = useRouter()
   return (
-    <div>
-      <nav className="w-full bg-gray-50 shadow">
+      <nav className="w-full relative top-0 left-0 z-50 bg-gray-50 shadow">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -92,7 +91,6 @@ const Navbar = (props: Props) => {
           </div>
         </div>
       </nav>
-    </div>
   )
 }
 

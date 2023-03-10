@@ -16,8 +16,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainHero />
-      <main className={styles.main}>
-        <div className={styles.description}>
+      <main>
+        <div>
           <p className="text-3xl font-bold underline">
       Hello LITTLE PIZZA!
           </p>
