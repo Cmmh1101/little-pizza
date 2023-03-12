@@ -4,10 +4,36 @@ import SectionWrapper from "../layout/SectionWrapper";
 type Props = {};
 
 const OrderNow = (props: Props) => {
+    const menuItem = [
+        {
+            image: "/",
+            name: "Appetizers"
+        },
+        {
+            image: "/",
+            name: "Salads & soups"
+        },
+        {
+            image: "/",
+            name: "Panini"
+        },
+        {
+            image: "/",
+            name: "Pizza"
+        },
+        {
+            image: "/",
+            name: "Pasta"
+        },
+        {
+            image: "/",
+            name: "Dessert"
+        },
+    ]
   return (
     <SectionWrapper>
-      <div className="uppercase">
-        <h1>Order Now</h1>
+      <div >
+        <h2 className="text-4xl uppercase md:text-6xl font-extrabold">Order Now</h2>
       </div>
     </SectionWrapper>
   );
