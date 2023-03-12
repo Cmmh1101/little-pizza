@@ -13,7 +13,6 @@ const MainHero = (props: Props) => {
         autoPlay
         muted
         playsInline
-        uk-coverz-0
       >
         <source src="../assets/videos/heroPizza1.mp4" type="video/mp4" />
       </video>
