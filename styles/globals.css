@@ -106,6 +106,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
+  line-height: 3;
   /* background: linear-gradient(
       to bottom,
       transparent,

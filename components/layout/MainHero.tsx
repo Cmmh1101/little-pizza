@@ -4,7 +4,7 @@ type Props = {};
 
 const MainHero = (props: Props) => {
   return (
-    <header className="flex items-center w-full h-screen">
+    <header className="flex items-center w-full h-screen tracking-widest">
       <video
         width={100}
         height={100}

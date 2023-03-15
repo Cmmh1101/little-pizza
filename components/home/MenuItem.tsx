@@ -21,7 +21,7 @@ const MenuItem = ({ item }: Props) => {
         href={item.url}
         target="_blank"
         rel="nonrreferer"
-        className="px-5 py-2 text-2xl text-white font-semibold rounded-full border border-red-200 bg-red-600 hover:text-white hover:bg-red-500  hover:border-transparent focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2"
+        className="px-5 py-2 text-2xl text-white font-semibold border border-red-200 bg-red-600 hover:text-white hover:bg-red-500  hover:border-transparent focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2"
       >
         {item.name}
       </a>

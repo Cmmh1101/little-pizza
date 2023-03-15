@@ -1,5 +1,5 @@
 import React from "react";
-import SectionWrapper from "../layout/SectionWrapper";
+import SectionWrapper from "../utils/SectionWrapper";
 import MenuItem from "./MenuItem";
 import {menuItemsData} from "../../data/menuItemsData"
 

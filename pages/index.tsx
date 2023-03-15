@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 import styles from "@/components/styles/Home.module.css";
 import MainHero from "../components/layout/MainHero";
 import OrderNow from "../components/home/OrderNow";
+import Banner from "../components/home/Banner";
+import ContactSection from "../components/home/ContactSection";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,8 +22,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainHero />
-      <main>
+      <main className="tracking-wider">
         <OrderNow />
+        <Banner />
+        <ContactSection />
       </main>
     </>
   );
