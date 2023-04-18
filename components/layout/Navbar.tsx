@@ -1,6 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import logo from "../../public/assets/images/logo-light.png"
 
 type Props = {};
 
@@ -13,9 +15,7 @@ const Navbar = (props: Props) => {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="#">
-              <h2 className="text-2xl text-black font-bold">
-                LittleItalyPizza
-              </h2>
+              <Image src={logo} alt="Little Italy Pizza Logo" width={250} height={200} />
             </a>
             <div className="md:hidden">
               <button
