@@ -1,14 +1,10 @@
 import React from "react";
 
-type Props = {};
-
-const MainHero = (props: Props) => {
+const MainHero = () => {
   return (
-    <header className="flex items-center w-full h-screen tracking-widest">
+    <header className="flex items-center w-full h-screen tracking-widest shadow">
       <video
-        width={100}
-        height={100}
-        className="absolute bottom-0 object-cover z-0 left-0 w-full h-screen bg-black"
+        className="absolute bottom-0 object-cover z-0 left-0 w-full h-full bg-black"
         loop
         autoPlay
         muted
@@ -17,7 +13,7 @@ const MainHero = (props: Props) => {
         <source src="../assets/videos/heroPizza1.mp4" type="video/mp4" />
       </video>
       <div className="container mx-auto text-center z-50">
-        <h1 className="text-6xl md:text-8xl text-white font-bold mb-5">
+        <h1 className="text-6xl hero-title md:text-8xl text-white font-bold mb-5">
           Little Italy East Memphis
         </h1>
         <p className="font-medium text-gray-200 text-2xl mb-5">

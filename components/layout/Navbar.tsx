@@ -10,7 +10,7 @@ const Navbar = (props: Props) => {
   const [navbar, setNavbar] = useState(false);
   const router = useRouter();
   return (
-    <nav className="w-full relative top-0 left-0 z-50 bg-gray-50 shadow">
+    <nav className="w-full absolute top-0 left-0 z-50 bg-gray-50 shadow">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -82,14 +82,14 @@ const Navbar = (props: Props) => {
                   router.pathname == "/OrderNow" &&
                   "text-red-600 md:border-b-4 md:border-red-600"}`}
               >
-                <a href="/OrderNow">Order Now!</a>
+                <a href="https://togoorder.com/web/Home/InactiveLocation/2645">Order Now!</a>
               </li>
               <li
                 className={`text-black font-normal md:font-bold text-2xl hover:text-red-600 hover:lg:border-b-4 hover:border-red-600 transition duration-300 ease-in-out ${
                   router.pathname == "/Catering" &&
                   "text-red-600 md:border-b-4 md:border-red-600"}`}
               >
-                <Link href="/Catering">Catering</Link>
+                <Link href="https://www.ezcater.com/catering/pvt/little-italy-pizza-memphis-memphis">Catering</Link>
               </li>
               <li
                 className={`text-black font-normal md:font-bold text-2xl hover:text-red-600 hover:lg:border-b-4 hover:border-red-600 transition duration-300 ease-in-out ${
