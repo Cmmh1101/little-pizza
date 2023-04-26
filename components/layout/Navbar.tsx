@@ -77,13 +77,13 @@ const Navbar = (props: Props) => {
               >
                 <Link href="/AboutUs">About Us</Link>
               </li>
-              <li
+              {/* <li
                 className={`text-black font-normal md:font-bold text-2xl hover:text-red-600 hover:lg:border-b-4 hover:border-red-600 transition duration-300 ease-in-out ${
                   router.pathname == "/OrderNow" &&
                   "text-red-600 md:border-b-4 md:border-red-600"}`}
               >
                 <a href="https://togoorder.com/web/Home/InactiveLocation/2645">Order Now!</a>
-              </li>
+              </li> */}
               <li
                 className={`text-black font-normal md:font-bold text-2xl hover:text-red-600 hover:lg:border-b-4 hover:border-red-600 transition duration-300 ease-in-out ${
                   router.pathname == "/Catering" &&
@@ -97,6 +97,13 @@ const Navbar = (props: Props) => {
                   "text-red-600 md:border-b-4 md:border-red-600"}`}
               >
                 <Link href="/Contact">Contact</Link>
+              </li>
+              <li
+                // className={`text-black font-normal md:font-bold text-2xl hover:text-red-600 hover:lg:border-b-4 hover:border-red-600 transition duration-300 ease-in-out`}
+              >
+                <a href="https://togoorder.com/web/Home/InactiveLocation/2645" target="_blank" rel="nonrreferer" className="px-5 py-2 text-2xl text-white font-semibold rounded-full border border-red-200 bg-red-600 hover:text-white hover:bg-red-500  hover:border-transparent focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2">
+          Order Now!
+        </a>
               </li>
             </ul>
           </div>
