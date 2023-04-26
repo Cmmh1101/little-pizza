@@ -12,7 +12,7 @@ const MainHero = () => {
       >
         <source src="../assets/videos/heroPizza1.mp4" type="video/mp4" />
       </video>
-      <div className="container mx-auto text-center z-50">
+      <div className="container mx-auto text-center z-20">
         <h1 className="text-6xl hero-title md:text-8xl text-white font-bold mb-5">
           Little Italy East Memphis
         </h1>
