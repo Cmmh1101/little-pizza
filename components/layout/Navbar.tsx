@@ -1,14 +1,37 @@
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import logo from "../../public/assets/images/logo-light.png"
+import NavLinks from "./NavLinks";
+import open from "../../public/assets/images/open.svg"
+import close from "../../public/assets/images/close.svg"
 
-type Props = {};
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
-  const router = useRouter();
+
+  const linkArray = [
+    {
+      url: "/",
+      linkName: "Home"
+    },
+    {
+      url: "/AboutUs",
+      linkName: "About Us"
+    },
+    {
+      url: "https://www.ezcater.com/catering/pvt/little-italy-pizza-memphis-memphis",
+      linkName: "Catering"
+    },
+    {
+      url: "/Contact",
+      linkName: "Contact"
+    },
+    {
+      url: "https://togoorder.com/web/Home/InactiveLocation/2645",
+      linkName: "Order Now"
+    },
+  ]
+
   return (
     <nav className="w-full absolute top-0 left-0 z-50 bg-gray-50 shadow">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
@@ -62,40 +85,11 @@ const Navbar = (props: Props) => {
             }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li
-                className={`text-black font-normal md:font-bold text-2xl hover:text-red-600 hover:lg:border-b-4 hover:border-red-600 transition duration-300 ease-in-out ${
-                  router.pathname == "/" &&
-                  "text-red-600 md:border-b-4 md:border-red-600"
-                }`}
-              >
-                <Link href="/">Home</Link>
-              </li>
-              <li
-                className={`text-black font-normal md:font-bold text-2xl hover:text-red-600 hover:lg:border-b-4 hover:border-red-600 transition duration-300 ease-in-out ${
-                  router.pathname == "/AboutUs" &&
-                  "text-red-600 md:border-b-4 md:border-red-600"}`}
-              >
-                <Link href="/AboutUs">About Us</Link>
-              </li>
-              <li
-                className={`text-black font-normal md:font-bold text-2xl hover:text-red-600 hover:lg:border-b-4 hover:border-red-600 transition duration-300 ease-in-out ${
-                  router.pathname == "/Catering" &&
-                  "text-red-600 md:border-b-4 md:border-red-600"}`}
-              >
-                <Link href="https://www.ezcater.com/catering/pvt/little-italy-pizza-memphis-memphis">Catering</Link>
-              </li>
-              <li
-                className={`text-black font-normal md:font-bold text-2xl hover:text-red-600 hover:lg:border-b-4 hover:border-red-600 transition duration-300 ease-in-out ${
-                  router.pathname == "/Contact" &&
-                  "text-red-600 md:border-b-4 md:border-red-600"}`}
-              >
-                <Link href="/Contact">Contact</Link>
-              </li>
-              <li>
-                <a href="https://togoorder.com/web/Home/InactiveLocation/2645" target="_blank" rel="nonrreferer" className="px-5 py-2 text-2xl text-white font-semibold rounded-full border border-red-200 bg-red-600 hover:text-white hover:bg-red-500  hover:border-transparent focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2">
-                  Order Now!
-                </a>
-              </li>
+              {linkArray.map((link, i) => {
+                return (
+                  <NavLinks key={i} path={link.url} name={link.linkName} />
+                )
+              })}
             </ul>
           </div>
         </div>
