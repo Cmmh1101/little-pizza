@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { useRouter } from "next/router";
 import React, { useState } from "react";
 import logo from "../../public/assets/images/logo-light.png"
 import NavLinks from "./NavLinks";
