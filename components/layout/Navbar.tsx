@@ -35,7 +35,7 @@ const Navbar = () => {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="#" className="mx-auto">
-              <Image src={logo} alt="Little Italy Pizza Logo" width={250} height={200} />
+              <Image src={logo} alt="Little Italy Pizza Logo" width={200} height={200} />
             </a>
             <div className="md:hidden">
               <button
