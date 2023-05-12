@@ -2,6 +2,8 @@ import Image from "next/image";
 import React, { useState } from "react";
 import logo from "../../public/assets/images/logo-light.png"
 import NavLinks from "./NavLinks";
+import { FiMapPin, FiClock } from "react-icons/fi"
+
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -31,9 +33,11 @@ const Navbar = () => {
 
   return (
     <nav className="w-full absolute top-0 left-0 z-50 bg-gray-50 shadow">
+      <div className="w-full flex justify-center items-center flex-wrap bg-black text-gray-200 text-sm py-1"><p className="flex justify-center items-center text-gray-200 mx-3"><span className="pr-1"><FiMapPin /> </span>6300 Poplar Ave, Suite 113
+Memphis, TN 38119</p><p className="flex justify-center items-center text-gray-200 mx-3"><span className="pr-1"><FiClock /> </span>Mon – Thurs 11 AM – 9 PM, Fri - Sat 11 AM - 10 PM, Sun 12 PM - 9 PM</p></div>
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
-          <div className="flex items-center justify-between py-3 md:py-5 md:block">
+          <div className="flex items-center justify-between py-0 md:py-5 md:block">
             <a href="#" className="mx-auto">
               <Image src={logo} alt="Little Italy Pizza Logo" width={200} height={200} />
             </a>
