@@ -15,7 +15,7 @@ const MenuItem = ({ item }: Props) => {
   return (
     <div className="w-60 lg:w-64 flex flex-col items-center my-6 group">
       <div className={`w-full h-56 filter group-hover:drop-shadow-2xl transition ease-in duration-500 ${classes.img}`}>
-        <Image src={item.image} alt={item.name} width={300} height={300} className="transform  object-none object-left-top scale-90 group-hover:scale-110 transition ease-in duration-500" />
+        <Image src={item.image} alt={item.name} width={200} height={200} className="transform  object-none object-left-top scale-90 group-hover:scale-110 transition ease-in duration-500" />
       </div>
       <a
         href={item.url}
