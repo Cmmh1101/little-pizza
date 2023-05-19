@@ -1,9 +1,8 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import logo from "../../public/assets/images/logo-light.png"
+import logo from "../../public/assets/images/logo-light.png";
 import NavLinks from "./NavLinks";
-import { FiMapPin, FiClock } from "react-icons/fi"
-
+import { FiMapPin, FiClock } from "react-icons/fi";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -11,35 +10,56 @@ const Navbar = () => {
   const linkArray = [
     {
       url: "/",
-      linkName: "Home"
+      linkName: "Home",
+    },
+    {
+      url: "/Menu",
+      linkName: "Menu",
     },
     {
       url: "/AboutUs",
-      linkName: "About Us"
+      linkName: "About Us",
     },
     {
       url: "https://www.ezcater.com/catering/pvt/little-italy-pizza-memphis-memphis",
-      linkName: "Catering"
+      linkName: "Catering",
     },
     {
       url: "/Contact",
-      linkName: "Contact"
+      linkName: "Contact",
     },
     {
       url: "https://togoorder.com/web/Home/InactiveLocation/2645",
-      linkName: "Order Now"
+      linkName: "Order Now",
     },
-  ]
+  ];
 
   return (
-    <nav className="w-full absolute top-0 left-0 z-50 bg-gray-50 shadow">
-      <div className="w-full flex justify-center items-center flex-wrap bg-black text-gray-200 text-sm py-1"><p className="flex justify-center items-center text-gray-200 mx-3"><span className="pr-1"><FiMapPin /> </span>6300 Poplar Ave, Suite 113
-Memphis, TN 38119</p><p className="flex justify-center items-center text-gray-200 mx-3"><span className="pr-1"><FiClock /> </span>Mon – Thurs 11 AM – 9 PM, Fri - Sat 11 AM - 10 PM, Sun 12 PM - 9 PM</p></div>
+    <nav className="w-full fixed  top-0 left-0 z-50 bg-gray-50 shadow">
+      <div className="w-full flex justify-center items-center flex-wrap bg-black text-gray-200 text-sm py-1">
+        <p className="flex justify-center items-center text-gray-200 mx-3">
+          <span className="pr-1">
+            <FiMapPin />{" "}
+          </span>
+          6300 Poplar Ave, Suite 113 Memphis, TN 38119
+        </p>
+        <p className="flex justify-center items-center text-gray-200 mx-3">
+          <span className="pr-1">
+            <FiClock />{" "}
+          </span>
+          Mon – Thurs 11 AM – 9 PM, Fri - Sat 11 AM - 10 PM, Sun 12 PM - 9 PM
+        </p>
+      </div>
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-0 md:py-5 md:block">
             <a href="#" className="mx-auto">
-              <Image src={logo} alt="Little Italy Pizza Logo" width={200} height={200} />
+              <Image
+                src={logo}
+                alt="Little Italy Pizza Logo"
+                width={200}
+                height={200}
+              />
             </a>
             <div className="md:hidden">
               <button
@@ -89,7 +109,7 @@ Memphis, TN 38119</p><p className="flex justify-center items-center text-gray-20
               {linkArray.map((link, i) => {
                 return (
                   <NavLinks key={i} path={link.url} name={link.linkName} />
-                )
+                );
               })}
             </ul>
           </div>

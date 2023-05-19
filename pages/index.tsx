@@ -6,6 +6,7 @@ import MainHero from "../components/utils/MainHero";
 import OrderNow from "../components/home/OrderNow";
 import Banner from "../components/home/Banner";
 import ContactSection from "../components/home/ContactSection";
+import Gallery from "../components/home/Gallery";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function Home() {
       <MainHero />
       <main className="tracking-wider">
         <OrderNow />
+        <Gallery />
         <Banner />
         <ContactSection />
       </main>
