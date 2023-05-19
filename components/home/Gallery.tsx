@@ -72,8 +72,8 @@ const Gallery = () => {
         thumbnailBorder="silver"
         imgAnimation="fade"
       >
-        {images.map((image) => (
-          <div className={classes.imageContainer}>
+        {images.map((image, i) => (
+          <div key={i} className={classes.imageContainer}>
             <Image
               src={image.src}
               alt={image.alt}
