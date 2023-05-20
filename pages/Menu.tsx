@@ -1,15 +1,25 @@
 import React from "react";
-import SmallHero from "../components/utils/smallHero";
-import PDFrender from "../components/menu/PDFrender";
+import ReactZoom from "../components/menu/ReactZoom";
+import Head from "next/head";
 
 type Props = {};
 
 const AboutUs = (props: Props) => {
   return (
-    <div>
-          <SmallHero />
-          <PDFrender />
+    <>
+    <Head>
+        <title>Little Italy East Memphis | Our Menu</title>
+        <meta
+          name="description"
+          content="Little Italy East Memphis | Our menu"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <div className="">
+      <ReactZoom />
     </div>
+    </>
+    
   );
 };
 
