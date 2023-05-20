@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactUsArea = () => {
   return (
-    <div className="w-full py-28 pt-48 px-5  flex items-center flex-wrap justify-center text-white bg-red-600 bg-opacity-25 text-center">
+    <div className="w-full py-28 pt-48 px-5 flex items-center flex-wrap justify-center text-white bg-black bg-opacity-80 text-center">
       <div className="" style={{width: "50%", minWidth: "400px"}}>
         <h2 className="text-4xl uppercase font-bold">
           Contact Us
