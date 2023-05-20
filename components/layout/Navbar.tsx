@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import logo from "../../public/assets/images/logo-light.png";
 import NavLinks from "./NavLinks";
 import { FiMapPin, FiClock } from "react-icons/fi";
+import Link from "next/link";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -53,14 +54,14 @@ const Navbar = () => {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-0 md:py-5 md:block">
-            <a href="/" className="mx-auto">
+            <Link href="/" className="mx-auto">
               <Image
                 src={logo}
                 alt="Little Italy Pizza Logo"
                 width={200}
                 height={200}
               />
-            </a>
+            </Link>
             <div className="md:hidden">
               <button
                 className="p-2 text-black rounded-md outline-none focus:border-gray-400 focus:border"

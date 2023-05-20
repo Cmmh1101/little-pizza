@@ -58,7 +58,7 @@ const Gallery = () => {
 
   useEffect(() => {
     initLightboxJS(process.env.LIGHTBOX_KEY!, process.env.LIGHTBOX_PLAN!);
-  }, [0]);
+  }, []);
 
   return (
     <section className="flex flex-col items-center px-10 md:px-28 lg:px-40 xl:px-60 py-28 bg-black">
