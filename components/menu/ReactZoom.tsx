@@ -8,11 +8,11 @@ import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 const ReactZoom = () => {
   const images = [
     {
-      path: "/assets/images/menus/menu-1.webp",
+      path: "/assets/images/menus/menu-2.webp",
       alt: "Menu front",
     },
     {
-      path: "/assets/images/menus/menu-2.webp",
+      path: "/assets/images/menus/menu-1.webp",
       alt: "Menu back",
     },
   ];

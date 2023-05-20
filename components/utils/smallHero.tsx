@@ -7,10 +7,10 @@ interface Props {
 const smallHero = ({ text }: Props) => {
   return (
     <header
-      className="flex items-center w-full h-[50vh] tracking-widest shadow"
+      className="flex items-center w-full h-[70vh] tracking-widest shadow"
       style={{
         backgroundImage: "url('/../assets/images/little-pizza-family.jpg')",
-        backgroundPosition: "center",
+        backgroundPosition: "bottom",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
