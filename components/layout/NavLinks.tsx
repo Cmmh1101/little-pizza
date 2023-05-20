@@ -5,9 +5,10 @@ import Link from "next/link";
 interface Links {
   path: string;
   name: string;
+  toggle: () => void
 }
 
-const NavLinks = ({ path, name }: Links) => {
+const NavLinks = ({ path, name, toggle }: Links) => {
   const router = useRouter();
 
   return (
@@ -17,7 +18,7 @@ const NavLinks = ({ path, name }: Links) => {
             "text-red-600 md:border-b-4 md:border-red-600"
           }`}
         >
-          <Link href={path} target={name.toLowerCase() === "order now" || name.toLowerCase() === "catering"  ? "_blank":""}>{name}</Link>
+          <Link href={path} target={name.toLowerCase() === "order now" || name.toLowerCase() === "catering"  ? "_blank":""} onClick={toggle}>{name}</Link>
         </li>
   );
 };

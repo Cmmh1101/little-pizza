@@ -8,6 +8,10 @@ import Link from "next/link";
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
+  const toggle = () => {
+     setNavbar(!navbar)
+  }
+
   const linkArray = [
     {
       url: "/",
@@ -65,7 +69,7 @@ const Navbar = () => {
             <div className="md:hidden">
               <button
                 className="p-2 text-black rounded-md outline-none focus:border-gray-400 focus:border"
-                onClick={() => setNavbar(!navbar)}
+                onClick={toggle}
               >
                 {navbar ? (
                   <svg
@@ -109,7 +113,7 @@ const Navbar = () => {
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {linkArray.map((link, i) => {
                 return (
-                  <NavLinks key={i} path={link.url} name={link.linkName} />
+                  <NavLinks key={i} path={link.url} name={link.linkName} toggle={toggle} />
                 );
               })}
             </ul>
