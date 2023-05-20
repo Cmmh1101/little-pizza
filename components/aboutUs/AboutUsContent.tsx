@@ -1,6 +1,6 @@
 import React from "react";
 import SectionWrapper from "../utils/SectionWrapper";
-import {aboutData }from "./aboutData"
+import {aboutData }from "../../data/aboutData"
 
 type Props = {};
 

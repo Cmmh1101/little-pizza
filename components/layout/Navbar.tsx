@@ -53,7 +53,7 @@ const Navbar = () => {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-0 md:py-5 md:block">
-            <a href="#" className="mx-auto">
+            <a href="/" className="mx-auto">
               <Image
                 src={logo}
                 alt="Little Italy Pizza Logo"
