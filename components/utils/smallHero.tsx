@@ -7,15 +7,15 @@ interface Props {
 const smallHero = ({ text }: Props) => {
   return (
     <header
-      className="flex items-end w-full h-[40vh] tracking-widest shadow"
+      className="flex items-center w-full h-[50vh] tracking-widest shadow"
       style={{
-        backgroundImage: "url('/../assets/images/smallHero.jpg')",
-        backgroundPosition: "bottom",
+        backgroundImage: "url('/../assets/images/little-pizza-family.jpg')",
+        backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="container mx-auto text-center z-20">
+      {/* <div className="container mx-auto text-center z-20">
         <a
           href="/"
           target="_blank"
@@ -24,7 +24,7 @@ const smallHero = ({ text }: Props) => {
         >
           Order Now!
         </a>
-      </div>
+      </div> */}
     </header>
   );
 };

@@ -7,7 +7,6 @@ const Form = (props: Props) => {
         <form name="contact" method="POST" className='text-black p-3' >
           <input type="hidden" name="form-name" value="contact" />
           <p>
-    {/* <input type="text" name="firstname" id="firstname" /> */}
             <label htmlFor="yourname" className='text-white'>
               Your Name:
             </label> <br />

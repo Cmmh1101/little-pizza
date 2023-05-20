@@ -1,11 +1,15 @@
 import React from 'react'
 import SmallHero from '../components/utils/smallHero'
+import AboutUsContent from '../components/aboutUs/AboutUsContent'
 
 type Props = {}
 
 const AboutUs = (props: Props) => {
   return (
-    <div><SmallHero /></div>
+    <div>
+      <SmallHero />
+      <AboutUsContent />
+    </div>
   )
 }
 
