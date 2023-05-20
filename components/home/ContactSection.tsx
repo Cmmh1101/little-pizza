@@ -7,8 +7,17 @@ const ContactSection = () => {
       <p className="text-2xl uppercase md:text-4xl font-bold text-center">
         In East Memphis on Poplar Ave.
       </p>
-      <address>1495 Union Ave, Memphis, TN 38104</address>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.8259793699394!2d-90.01387504852843!3d35.13601598022835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d57e0fb2599001%3A0xf0b08078df86e5e4!2s1495%20Union%20Ave%2C%20Memphis%2C%20TN%2038104!5e0!3m2!1sen!2sus!4v1610726424262!5m2!1sen!2sus" className="w-full" width="600" height="450" allowFullScreen aria-hidden="false" tabIndex={0}></iframe>
+      <address>6300 Poplar Ave, Suite 113 Memphis, TN 38119</address>
+      <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.1869791661384!2d-89.85526102267984!3d35.10204167277975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887f84cafe2ad1c9%3A0x906de165e5e3de0c!2s6300%20Poplar%20Ave%20%23113%2C%20Memphis%2C%20TN%2038119!5e0!3m2!1sen!2sus!4v1684559021770!5m2!1sen!2sus"
+            className="w-full"
+            width="600"
+            height="450"
+            allowFullScreen
+            aria-hidden="false"
+            tabIndex={0}
+            loading="lazy"
+          ></iframe>
     </div>
   );
 };
