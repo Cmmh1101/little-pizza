@@ -15,7 +15,7 @@ const AboutUs = (props: Props) => {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className='h-screen flex' style={{ backgroundImage: "url('/../assets/images/italy-view.jpg')", backgroundPosition: "bottom", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}><ContactUsArea /></div>
+      <div className='min-h-screen flex' style={{ backgroundImage: "url('/../assets/images/italy-view.jpg')", backgroundPosition: "bottom", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}><ContactUsArea /></div>
       </>
   )
 }

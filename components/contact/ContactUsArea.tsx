@@ -5,9 +5,9 @@ const ContactUsArea = () => {
   return (
     <div className="w-full py-28 pt-48 px-5 flex items-center justify-center flex-col text-white bg-black bg-opacity-80 text-center">
       <h2 className="text-4xl uppercase md:text-6xl font-extrabold mb-5">
-        Order Now
+        Contact Us
       </h2>
-      <div className="flex items-center flex-wrap justify-center rounded-2xl overflow-hidden p-5 text-white bg-black bg-opacity-80 text-center">
+      <div className="flex items-center flex-wrap justify-center rounded-2xl  p-5 text-white bg-black bg-opacity-80 text-center">
         <div className="" style={{ width: "50%", minWidth: "400px" }}>
           Phone:{" "}
           <a

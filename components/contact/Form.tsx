@@ -19,7 +19,7 @@ const Form = (props: Props) => {
             <input type="email" name="email" id="youremail" className='w-full mx-auto px-3' placeholder='Email' />
           </p>
           <p>
-            <label htmlFor="yourmessage">
+            <label htmlFor="yourmessage" className='text-white'>
               Message:
             </label> <br />
             <textarea className='w-full mx-auto px-3' name="message" id="yourmessage" placeholder='Message'></textarea>
