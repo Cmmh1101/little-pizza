@@ -4,7 +4,7 @@ type Props = {}
 
 const Form = (props: Props) => {
     return (
-        <form name="contact" method="POST" className='text-black p-3' >
+        <form name="contact" method="POST" className='text-black md:pl-0 md:pr-3' >
           <input type="hidden" name="form-name" value="contact" />
           <p>
             <label htmlFor="yourname" className='text-white'>
@@ -24,7 +24,7 @@ const Form = (props: Props) => {
             </label> <br />
             <textarea className='w-full mx-auto px-3' name="message" id="yourmessage" placeholder='Message'></textarea>
           </p>
-            <button type="submit" className='text-white border px-3 rounded-md'>Send</button>
+            <button type="submit" className='text-white border px-3 rounded-md mb-4'>Send</button>
         </form>
       )
 }
