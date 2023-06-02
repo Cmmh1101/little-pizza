@@ -80,7 +80,7 @@ const Gallery = () => {
               fill
               data-lightboxjs="lightbox1"
               quality={80}
-              className={`shadow opacity-75 hover:opacity-100 hover:scale-110 ${classes.image}`}
+              className={`shadow opacity-75 hover:opacity-100 transition hover:scale-110 ease-in-out duration-700 ${classes.image}`}
             />
           </div>
         ))}
