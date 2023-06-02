@@ -30,14 +30,26 @@ const ReactZoom = () => {
           >
             {({ zoomIn, zoomOut, resetTransform, ...rest }) => (
               <React.Fragment>
-                <div className="text-2xl">
-                  <button className="mx-3 p-3 opacity-75 hover:opacity-100 transition hover:scale-110 ease-in-out duration-700" onClick={() => zoomIn()} title="Zoom in">
+                <div className="text-2xl h-100">
+                  <button
+                    className="mx-3 p-3 opacity-75 hover:opacity-100 transition hover:scale-110 ease-in-out duration-700"
+                    onClick={() => zoomIn()}
+                    title="Zoom in"
+                  >
                     <FiZoomIn />
                   </button>
-                  <button className="mx-3 p-2 opacity-75 hover:opacity-100 transition hover:scale-110 ease-in-out duration-700" onClick={() => zoomOut()} title="Zoom Out">
-                  <FiZoomOut />
+                  <button
+                    className="mx-3 p-2 opacity-75 hover:opacity-100 transition hover:scale-110 ease-in-out duration-700"
+                    onClick={() => zoomOut()}
+                    title="Zoom Out"
+                  >
+                    <FiZoomOut />
                   </button>
-                  <button className="mx-3 p-2 opacity-75 hover:opacity-100 transition hover:scale-110 ease-in-out duration-700" onClick={() => resetTransform()} title="Reset">
+                  <button
+                    className="mx-3 p-2 opacity-75 hover:opacity-100 transition hover:scale-110 ease-in-out duration-700"
+                    onClick={() => resetTransform()}
+                    title="Reset"
+                  >
                     <FiRefreshCcw />
                   </button>
                 </div>
@@ -52,25 +64,26 @@ const ReactZoom = () => {
                     />
                   </div>
                 </TransformComponent>
-                <div className="py-3 w-full text-center border-b-4 border-white border-opacity-75">
-                  Dine in, Delivery, and Take Out -{" "}
+                <div className="py-3 flex flex-col md:flex-row justify-center items-center w-full text-center border-b-4 border-white border-opacity-75">
+                  Dine in, Delivery, and Take Out{" "}
                   <Link
                     href="https://togoorder.com/web/Home/InactiveLocation/2645"
                     target="_blank"
-                    className="px-5 py-2 text-white font-semibold rounded-full border border-red-200 bg-red-600 hover:text-white hover:bg-red-500 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2"
+                    className="px-5 py-0 my-0 mx-2 text-white font-semibold rounded-full border border-red-200 bg-red-600 hover:text-white hover:bg-red-500 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 xs:text-sm"
                   >
                     Order online
                   </Link>{" "}
-                  – Call{" "}
-                  <a
-                    href="tel:9017297432"
-                    className="transition ease-in-out hover:underline"
-                  >
-                    (901) 729-7432
-                  </a>{" "}
-                  to Place Your Order Now{" "}
+                  <div>
+                    Call{" "}
+                    <a
+                      href="tel:9017297432"
+                      className="transition ease-in-out hover:underline"
+                    >
+                      (901) 729-7432
+                    </a>{" "}
+                    to Place Your Order Now{" "}
+                  </div>
                 </div>
-                
               </React.Fragment>
             )}
           </TransformWrapper>
