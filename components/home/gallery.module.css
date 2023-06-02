@@ -1,6 +1,7 @@
 .imageContainer {
   width: 200px;
   height: 200px;
+  position: relative !important;
 }
 
 .imageContainer > div {
@@ -12,3 +13,4 @@
   width: 100% !important;
   position: relative !important;
 }
+

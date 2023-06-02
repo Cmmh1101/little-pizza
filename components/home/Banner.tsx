@@ -9,7 +9,7 @@ const Banner = () => {
       <h3 className="text-3xl uppercase md:text-5xl text-white font-bold text-center z-10">
         Call and Order Your Favorites Now!
         <br />
-        <a href="tel:9017250280" className="text-red-900 transition ease-in-out hover:underline">(901) 725-0280</a>
+        <a href="tel:9017297432" className="text-red-900 transition ease-in-out hover:underline">(901) 729-7432</a>
       </h3>
       <Image
         src={pizza}

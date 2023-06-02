@@ -73,14 +73,14 @@ const Gallery = () => {
         imgAnimation="fade"
       >
         {images.map((image, i) => (
-          <div key={i} className={classes.imageContainer}>
+          <div key={i} className={`overflow-hidden ${classes.imageContainer}`}>
             <Image
               src={image.src}
               alt={image.alt}
               fill
               data-lightboxjs="lightbox1"
               quality={80}
-              className={`shadow ${classes.image}`}
+              className={`shadow opacity-75 hover:opacity-100 hover:scale-110 ${classes.image}`}
             />
           </div>
         ))}

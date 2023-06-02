@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { Component } from "react";
-import classes from "./reactZoom.module.css"
+import classes from "./reactZoom.module.css";
 
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
@@ -25,7 +25,7 @@ const ReactZoom = () => {
             initialScale={1}
             initialPositionX={0}
             initialPositionY={0}
-                key={i}
+            key={i}
           >
             {({ zoomIn, zoomOut, resetTransform, ...rest }) => (
               <React.Fragment>
@@ -41,20 +41,34 @@ const ReactZoom = () => {
                   </button>
                 </div>
                 <TransformComponent>
-                <div key={i} className={classes.imageContainer}>
-            <Image
-              src={image.path} alt={image.alt}
-              fill
-              quality={80}
-              className={`shadow ${classes.image}`}
-            />
-          </div>
-                  {/* <div className="w-full">
-                  <Image src={image.path} alt={image.alt} width={800} height={800} />
-                  </div> */}
-                  
-                        </TransformComponent>
-                        <div>Dine in, Delivery, and Take Out - <Link href="https://togoorder.com/web/Home/InactiveLocation/2645" target="_blank" className="px-5 py-2 text-white font-semibold rounded-full border border-red-200 bg-red-600 hover:text-white hover:bg-red-500 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2">Order online</Link> – Call (901) 725-0280 to Place Your Order Now </div>
+                  <div key={i} className={classes.imageContainer}>
+                    <Image
+                      src={image.path}
+                      alt={image.alt}
+                      fill
+                      quality={80}
+                      className={`shadow ${classes.image}`}
+                    />
+                  </div>
+                </TransformComponent>
+                <div>
+                  Dine in, Delivery, and Take Out -{" "}
+                  <Link
+                    href="https://togoorder.com/web/Home/InactiveLocation/2645"
+                    target="_blank"
+                    className="px-5 py-2 text-white font-semibold rounded-full border border-red-200 bg-red-600 hover:text-white hover:bg-red-500 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2"
+                  >
+                    Order online
+                  </Link>{" "}
+                  – Call{" "}
+                  <a
+                    href="tel:9017297432"
+                    className="transition ease-in-out hover:underline"
+                  >
+                    (901) 729-7432
+                  </a>{" "}
+                  to Place Your Order Now{" "}
+                </div>
               </React.Fragment>
             )}
           </TransformWrapper>

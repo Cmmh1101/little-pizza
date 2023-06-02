@@ -11,10 +11,10 @@ const ContactUsArea = () => {
         <div className="" style={{ width: "50%", minWidth: "400px" }}>
           Phone:{" "}
           <a
-            href="tel:9017250280"
+            href="tel:9017297432"
             className="text-white transition ease-in-out hover:underline"
           >
-            (901) 725-0280
+            (901) 729-7432
           </a>
           <address className="mb-3">6300 Poplar Ave, Suite 113 Memphis, TN 38119</address>
           <Form />
