@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { Component } from "react";
 import classes from "./reactZoom.module.css";
+import { FiZoomIn, FiZoomOut, FiRefreshCcw } from "react-icons/fi";
 
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
@@ -29,15 +30,15 @@ const ReactZoom = () => {
           >
             {({ zoomIn, zoomOut, resetTransform, ...rest }) => (
               <React.Fragment>
-                <div className="">
-                  <button className="mx-3" onClick={() => zoomIn()}>
-                    Zoom in
+                <div className="text-2xl">
+                  <button className="mx-3 p-3 opacity-75 hover:opacity-100 transition hover:scale-110 ease-in-out duration-700" onClick={() => zoomIn()} title="Zoom in">
+                    <FiZoomIn />
                   </button>
-                  <button className="mx-3" onClick={() => zoomOut()}>
-                    Zoom out
+                  <button className="mx-3 p-2 opacity-75 hover:opacity-100 transition hover:scale-110 ease-in-out duration-700" onClick={() => zoomOut()} title="Zoom Out">
+                  <FiZoomOut />
                   </button>
-                  <button className="mx-3" onClick={() => resetTransform()}>
-                    Reset
+                  <button className="mx-3 p-2 opacity-75 hover:opacity-100 transition hover:scale-110 ease-in-out duration-700" onClick={() => resetTransform()} title="Reset">
+                    <FiRefreshCcw />
                   </button>
                 </div>
                 <TransformComponent>
@@ -51,7 +52,7 @@ const ReactZoom = () => {
                     />
                   </div>
                 </TransformComponent>
-                <div>
+                <div className="py-3 w-full text-center border-b-4 border-white border-opacity-75">
                   Dine in, Delivery, and Take Out -{" "}
                   <Link
                     href="https://togoorder.com/web/Home/InactiveLocation/2645"
@@ -69,6 +70,7 @@ const ReactZoom = () => {
                   </a>{" "}
                   to Place Your Order Now{" "}
                 </div>
+                
               </React.Fragment>
             )}
           </TransformWrapper>
