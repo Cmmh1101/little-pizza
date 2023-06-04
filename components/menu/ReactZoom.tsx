@@ -5,6 +5,16 @@ import classes from "./reactZoom.module.css";
 import { FiZoomIn, FiZoomOut, FiRefreshCcw } from "react-icons/fi";
 
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+// const images = [
+//   {
+//     path: "/assets/images/menus/menu-2.webp",
+//     alt: "Menu front",
+//   },
+//   {
+//     path: "/assets/images/menus/menu-1.webp",
+//     alt: "Menu back",
+//   },
+// ];
 
 const ReactZoom = () => {
   const images = [
