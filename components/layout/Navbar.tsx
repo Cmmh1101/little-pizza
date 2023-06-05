@@ -52,7 +52,7 @@ const Navbar = () => {
           <span className="pr-1">
             <FiClock />{" "}
           </span>
-          Mon – Thurs 11 AM – 9 PM, Fri - Sat 11 AM - 10 PM, Sun 12 PM - 9 PM
+          Mon – Thurs: 11 AM – 9 PM, Fri - Sat: 11 AM - 9:30 PM, Sun: Closed
         </p>
       </div>
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
