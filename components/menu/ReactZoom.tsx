@@ -1,32 +1,23 @@
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React, { Component } from "react";
 import classes from "./reactZoom.module.css";
 import { FiZoomIn, FiZoomOut, FiRefreshCcw } from "react-icons/fi";
 
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
-// const images = [
-//   {
-//     path: "/assets/images/menus/menu-2.webp",
-//     alt: "Menu front",
-//   },
-//   {
-//     path: "/assets/images/menus/menu-1.webp",
-//     alt: "Menu back",
-//   },
-// ];
+
+const images = [
+  {
+    path: "/assets/images/menus/menu-2.webp",
+    alt: "Menu front",
+  },
+  {
+    path: "/assets/images/menus/menu-1.webp",
+    alt: "Menu back",
+  },
+];
 
 const ReactZoom = () => {
-  const images = [
-    {
-      path: "/assets/images/menus/menu-2.webp",
-      alt: "Menu front",
-    },
-    {
-      path: "/assets/images/menus/menu-1.webp",
-      alt: "Menu back",
-    },
-  ];
 
   return (
     <div className="bg-black w-[90vw] h-auto rounded-xl drop-shadow-2xl overflow-hidden flex flex-col items-center text-white mx-auto mt-44 mb-14 cursor-grab">
@@ -69,6 +60,7 @@ const ReactZoom = () => {
                       src={image.path}
                       alt={image.alt}
                       fill
+                      priority
                       quality={80}
                       className={`shadow ${classes.image}`}
                     />
