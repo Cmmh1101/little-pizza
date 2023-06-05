@@ -57,13 +57,13 @@ const Navbar = () => {
       </div>
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
-          <div className="flex items-center justify-between py-0 md:py-5 md:block">
+          <div className="flex items-center justify-between py-0 pb-1 md:py-5 md:block">
             <Link href="/" className="mx-auto">
               <Image
                 src={logo}
                 alt="Little Italy Pizza Logo"
-                width={200}
-                height={200}
+                width={150}
+                height={150}
                 style={{width: "auto", height:"auto"}}
                 priority
               />
