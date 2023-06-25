@@ -69,7 +69,7 @@ const ReactZoom = () => {
                 <div className="py-3 flex flex-col md:flex-row justify-center items-center w-full text-center border-b-4 border-white border-opacity-75">
                   Dine in, Delivery, and Take Out{" "}
                   <Link
-                    href="https://togoorder.com/web/Home/InactiveLocation/2645"
+                    href="https://togoorder.com/web/5989#/"
                     target="_blank"
                     className="px-5 py-0 my-0 mx-2 text-white font-semibold rounded-full border border-red-200 bg-red-600 hover:text-white hover:bg-red-500 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 xs:text-sm"
                   >

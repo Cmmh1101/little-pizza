@@ -26,7 +26,7 @@ const Navbar = () => {
       linkName: "About Us",
     },
     {
-      url: "https://www.ezcater.com/catering/pvt/little-italy-pizza-memphis-memphis",
+      url: "https://togoorder.com/web/5989#/",
       linkName: "Catering",
     },
     {
@@ -34,7 +34,7 @@ const Navbar = () => {
       linkName: "Contact",
     },
     {
-      url: "https://togoorder.com/web/Home/InactiveLocation/2645",
+      url: "https://togoorder.com/web/5989#/",
       linkName: "Order Now",
     },
   ];
