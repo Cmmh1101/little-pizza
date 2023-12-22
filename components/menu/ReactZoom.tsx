@@ -8,11 +8,11 @@ import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 const images = [
   {
-    path: "/assets/images/menus/menu-2.webp",
+    path: "/assets/images/menus/menu-2-dec-2023.png",
     alt: "Menu front",
   },
   {
-    path: "/assets/images/menus/menu-1.webp",
+    path: "/assets/images/menus/menu-1-dec-2023.png",
     alt: "Menu back",
   },
 ];
@@ -61,7 +61,7 @@ const ReactZoom = () => {
                       alt={image.alt}
                       fill
                       priority
-                      quality={80}
+                      quality={100}
                       className={`shadow ${classes.image}`}
                     />
                   </div>
