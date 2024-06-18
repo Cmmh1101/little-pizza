@@ -18,7 +18,7 @@ const NavLinks = ({ path, name, toggle }: Links) => {
             "text-red-600 md:border-b-4 md:border-red-600"
           }`}
         >
-          <Link href={path} target={name.toLowerCase() === "order now" || name.toLowerCase() === "catering"  ? "_blank":""} onClick={toggle}>{name}</Link>
+          <Link href={path} target={name.toLowerCase() === "order now" ? "_blank":""} onClick={toggle}>{name}</Link>
         </li>
   );
 };

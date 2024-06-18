@@ -2,15 +2,16 @@ import React from "react";
 
 interface Props {
   text?: string;
+  img?: string;
 }
 
 const smallHero = ({ text }: Props) => {
   return (
     <header
-      className="flex items-center w-full h-[70vh] tracking-widest shadow"
+      className="flex justify-center items-center w-full h-[70vh] tracking-widest shadow"
       style={{
         backgroundImage: "url('/../assets/images/little-pizza-family.jpg')",
-        backgroundPosition: "bottom",
+        backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}

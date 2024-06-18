@@ -26,7 +26,7 @@ const Navbar = () => {
       linkName: "About Us",
     },
     {
-      url: "https://togoorder.com/web/5989#/",
+      url: "/Catering",
       linkName: "Catering",
     },
     {
