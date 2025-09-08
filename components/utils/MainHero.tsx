@@ -21,11 +21,11 @@ const MainHero = () => {
           {" "}
           Pizza | Pasta | Salads
         </p>
-        <div className="flex flex-col md:flex-row justify-center w-80 md:w-100">
-          <a href="https://togoorder.com/web/5989#/" target="_blank" rel="nonrreferer" className="px-5 py-2 m-2 text-2xl text-white font-semibold rounded-full border border-red-200 bg-red-600 hover:text-white hover:bg-red-500  hover:border-transparent focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2">
+        <div className="flex flex-col md:flex-row justify-center w-100">
+          <a href="https://togoorder.com/web/5989#/" target="_blank" rel="nonrreferer" className="px-5 py-2 m-2 text-2xl text-white font-semibold rounded-full border border-red-200 bg-red-600 hover:text-white hover:bg-red-500  hover:border-transparent focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 w-80">
           Order Now!
         </a>
-        <Link href="/Catering" rel="nonrreferer" className="px-5 py-2 m-2 text-2xl text-white font-semibold rounded-full border border-red-200 bg-green-600 hover:text-white hover:bg-green-500  hover:border-transparent focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2">
+        <Link href="/Catering" rel="nonrreferer" className="px-5 py-2 m-2 text-2xl text-white font-semibold rounded-full border border-red-200 bg-green-600 hover:text-white hover:bg-green-500  hover:border-transparent focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2 w-80">
           Catering Order!
         </Link>
         </div>
