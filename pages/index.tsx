@@ -5,6 +5,7 @@ import OrderNow from "../components/home/OrderNow";
 import Banner from "../components/home/Banner";
 import ContactSection from "../components/home/ContactSection";
 import Gallery from "../components/home/Gallery";
+import BirdeyeWidget from "../components/contact/BirdeyeWidget";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function Home() {
       <main className="tracking-wider">
         <OrderNow />
         <Gallery />
+        <BirdeyeWidget option="opt1" /> {/* pick opt1/opt2/opt3 */}
         <Banner />
         <ContactSection />
       </main>
