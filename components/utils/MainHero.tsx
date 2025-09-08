@@ -21,9 +21,9 @@ const MainHero = () => {
           {" "}
           Pizza | Pasta | Salads
         </p>
-        <Link href="https://togoorder.com/web/5989#/" target="_blank" rel="nonrreferer" className="px-5 py-2 mx-2 text-2xl text-white font-semibold rounded-full border border-red-200 bg-red-600 hover:text-white hover:bg-red-500  hover:border-transparent focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2">
+        <a href="https://togoorder.com/web/5989#/" target="_blank" rel="nonrreferer" className="px-5 py-2 mx-2 text-2xl text-white font-semibold rounded-full border border-red-200 bg-red-600 hover:text-white hover:bg-red-500  hover:border-transparent focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2">
           Order Now!
-        </Link>
+        </a>
         <Link href="/Catering" rel="nonrreferer" className="px-5 py-2 mx-2 text-2xl text-white font-semibold rounded-full border border-red-200 bg-green-600 hover:text-white hover:bg-green-500  hover:border-transparent focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2">
           Catering Order!
         </Link>
