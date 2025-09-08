@@ -11,7 +11,7 @@ const Form = (props: Props) => {
         {/* Honeypot (hidden anti-spam field) */}
         <p hidden>
           <label>
-            Don't fill this out: <input name="bot-field" />
+            Don&apos;t fill this out: <input name="bot-field" />
           </label>
         </p>
           <p>
