@@ -20,10 +20,10 @@ const cfg = {
 export default function BirdeyeWidget({ option = 'opt2' as Option }) {
   const { src, id } = cfg[option];
   return (
-    <>
+    <div className='w-full px-0 py-28'>
       <Script src={src} strategy="afterInteractive" async />
       <div id={id} />
       <noscript>Enable JavaScript to view our reviews.</noscript>
-    </>
+    </div>
   );
 }
