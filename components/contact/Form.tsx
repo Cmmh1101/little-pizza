@@ -5,7 +5,8 @@ type Props = {}
 const Form = (props: Props) => {
     return (
         <form name="contact" method="POST" className='text-black md:pl-0 md:pr-3' data-netlify="true" netlify-honeypot="bot-field" action="/success"
-      acceptCharset="UTF-8">
+        acceptCharset="UTF-8"
+        netlify >
         {/* Required for Netlify to map the submission to this form */}
         <input type="hidden" name="form-name" value="contact" />
         {/* Honeypot (hidden anti-spam field) */}
