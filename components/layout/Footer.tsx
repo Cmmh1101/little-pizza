@@ -8,7 +8,7 @@ const Footer = (props: Props) => {
 
   return (
     <section className="w-full py-3 flex flex-col items-center text-center justify-center bg-black text-gray-200">
-      <small>© Little Italy Pizza East Memphis {year.getFullYear()} | Website by <a href="https://carlamontano.tech">Carla Montano Co.</a></small>
+      <small>© Little Italy Pizza East Memphis {year.getFullYear()} | Website by <a href="https://inmotionwebsolutions.com">In Motion Web Solutions LLC</a></small>
     </section>
   )
 }
