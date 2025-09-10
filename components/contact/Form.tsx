@@ -46,7 +46,7 @@ export default function Form() {
   }
 
   return (
-    <form name="contact" onSubmit={onSubmit} className="text-black md:pl-0 md:pr-3">
+    <form name="contact" onSubmit={onSubmit} className="text-black md:pl-0 md:pr-3 text-start">
       <input type="hidden" name="form-name" value="contact" />
 
       {/* Honeypot (hidden) */}
@@ -57,24 +57,28 @@ export default function Form() {
       </p>
 
       <p>
-        <label htmlFor="yourname" className="text-white">Your Name:</label><br />
+        <label htmlFor="yourname" aria-required className="text-white text-start">Your Name:</label><br />
         <input className="w-full mx-auto px-3" type="text" name="name" id="yourname" placeholder="Full name" required />
       </p>
 
       <p>
-        <label htmlFor="youremail" className="text-white">Your Email:</label><br />
+        <label htmlFor="youremail" aria-required className="text-white text-start">Your Email:</label><br />
         <input className="w-full mx-auto px-3" type="email" name="email" id="youremail" placeholder="Email" required />
       </p>
 
       <p>
-        <label htmlFor="yourmessage" className="text-white">Message:</label><br />
-        <textarea className="w-full mx-auto px-3" name="message" id="yourmessage" placeholder="Message" rows={5} required />
+        <label
+          htmlFor="yourmessage"
+          className="text-white"
+          aria-required
+        >Message:</label><br />
+        <textarea className="w-full mx-auto px-3" name="message" id="yourmessage" placeholder="Message" rows={2} required />
       </p>
 
       <button
         type="submit"
         disabled={status === 'submitting'}
-        className="text-white border px-3 rounded-md mb-4 disabled:opacity-60"
+        className="w-full inline-flex items-center justify-center rounded-full text-white border disabled:opacity-60 disabled:cursor-not-allowed"
         aria-busy={status === 'submitting'}
       >
         {status === 'submitting' ? 'Sending…' : 'Send'}
